@@ -1,0 +1,4 @@
+#	Country	Town	Lat	Lon	IP	Hostname	Latency (ms)	Dns lookup (ms)	Distance to previous node (km)
+1	Chile	Valparaiso	-33.047806	-71.6011	200.1.20.155	nat-sj-labinf1.campus.utfsm.cl	0	0	0
+2	Chile	Valparaiso	-33.047806	-71.6011	200.1.21.155	gw-ext.inf.utfsm.cl.	160	3	0
+3	Chile	Valparaiso	-33.047806	-71.6011	200.1.19.40	moodle.inf.utfsm.cl.	140	4	0

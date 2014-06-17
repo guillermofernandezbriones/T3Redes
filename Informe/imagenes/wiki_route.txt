@@ -1,0 +1,15 @@
+#	Country	Town	Lat	Lon	IP	Hostname	Latency (ms)	Dns lookup (ms)	Distance to previous node (km)
+1	Chile	Valparaiso	-33.047806	-71.6011	200.1.20.155	nat-sj-labinf1.campus.utfsm.cl	0	0	0
+2	Chile	Valparaiso	-33.047806	-71.6011	200.1.21.131	fw.usm.cl.	1	11	0
+3	Chile	Valparaiso	-33.047806	-71.6011	200.1.20.131	telmex-gw.usm.cl.	1	3	0
+4	Chile	Santiago	-33.449997	-70.6667	190.208.0.173	190.208.0.173.	7	5	97
+5	Chile	Santiago	-33.449997	-70.6667	190.208.5.77	190.208.5.77.	2	4	0
+6	Chile	Santiago	-33.449997	-70.6667	200.27.5.178	(None)	8	2	0
+7	Chile	Santiago	-33.449997	-70.6667	200.27.5.206	(None)	105	16	0
+8	Chile	Santiago	-33.449997	-70.6667	190.208.9.9	190.208.9.9.	2	5	0
+9	Chile	Santiago	-33.449997	-70.6667	190.208.9.6	190.208.9.6.	1	11	0
+10	United States	Englewood	39.623703	-104.8738	157.238.179.17	xe-0-4-0-2.r05.miamfl02.us.bb.gin.ntt.net.	69	6	8864
+11	United States	Englewood	39.623703	-104.8738	129.250.2.184	ae-4.r20.miamfl02.us.bb.gin.ntt.net.	25	3	0
+12	United States	Englewood	39.623703	-104.8738	129.250.4.207	ae-2.r04.asbnva02.us.bb.gin.ntt.net.	140	22	0
+13	United States	Englewood	39.623703	-104.8738	129.250.204.190	xe-0-7-0-8.r04.asbnva02.us.ce.gin.ntt.net.	69	3	0
+14	United States	San Francisco	37.789795	-122.394196	208.80.154.224	text-lb.eqiad.wikimedia.org.	78	1584	1533

@@ -1,0 +1,29 @@
+1 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+2 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.21.131\\
+3 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+4 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.0.173\\
+5 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.5.77\\
+6 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.178\\
+7 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.114\\
+8 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.9\\
+9 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.6\\
+10 & United States & Englewood & 39.623703 & -104.8738 & 129.250.2.110\\
+11 & United States & Englewood & 39.623703 & -104.8738 & 129.250.2.99\\
+12 & United States & Englewood & 39.623703 & -104.8738 & 129.250.4.4\\
+13 & United States & New York & 40.7267 & -73.9981 & 192.241.164.238\\
+14 & United States & New York & 40.7267 & -73.9981 & 107.170.72.180\\
+
+1 & nat-sj-labinf1.campus.utfsm.cl & 0 & 0 & 0\\
+2 & fw.usm.cl. & 37 & 3 & 0\\
+3 & telmex-gw.usm.cl. & 27 & 3 & 0\\
+4 & 190.208.0.173. & 1 & 186 & 97\\
+5 & 190.208.5.77. & 0 & 46 & 0\\
+6 & (None) & 1 & 289 & 0\\
+7 & Ge1-2.igr1.Santiago.ip.telmexchile.cl. & 59 & 84 & 0\\
+8 & 190.208.9.9. & 36 & 62 & 0\\
+9 & 190.208.9.6. & 36 & 27 & 0\\
+10 & ae-3.r20.miamifl02.us.bb.gin.ntt.net. & 1 & 4 & 8864\\
+11 & ae-8.r21.asbnva02.us.bb.gin.ntt.net. & 10 & 3 & 0\\
+12 & ae-8.r20.asbnva02.us.bb.gin.ntt.net. & 46 & 4 & 0\\
+13 & (None) & 34 & 10507 & 2615\\
+14 & (None) & 1 & 369 & 0\\

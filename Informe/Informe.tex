@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=3cm]{geometry}
+\usepackage[margin=2.5cm]{geometry}
 \usepackage{moreverb}
 \usepackage[pdftex]{graphicx}
 \usepackage{float}
@@ -48,7 +48,7 @@ En este laboratorio, se analizará qué es lo que ocurre con los paquetes a medi
 
 \section{Desarrollo}
 \subsection{Las dimensiones de Internet}
-En esta sección, se han analizado una serie de sitios web que, mediante el ingreso de sus URL al programa \textit{Open Visual Traceroute}, se puede conocer qué camino toman los paquetes a través del planeta, evidenciándose así que existen saltos tan extraordinarios como lo que significa ir de un continente a otro. Los sitios web analizados son los siguientes:
+En esta sección, se han analizado una serie de sitios web que, mediante el ingreso de sus URL al programa \textit{Open Visual Traceroute} (OVT), se puede conocer qué camino toman los paquetes a través del planeta, evidenciándose así que existen saltos tan extraordinarios como lo que significa ir de un continente a otro. Los sitios web analizados son los siguientes:
 
 \begin{enumerate}
 \item {\it http://moodle.inf.utfsm.cl/}
@@ -58,54 +58,408 @@ En esta sección, se han analizado una serie de sitios web que, mediante el ingr
 \item {\it http://www.chile.embassy.gov.au/}
 \end{enumerate}
 
-Para realizarlo, se ejecuta el código de la siguiente forma. En primer lugar, se ejecuta \emph{servidorTCP.java}:
+El \emph{traceroute} realizado para cada sitio web ha sido usando la red del Departamento de Informática de la universidad ("di"). Se debe destacar que al estar conectado a "di", se reconoce al equipo como si estuviera conectado desde Valparaíso, donde se encuentran los servidores del departamento. Otro aspecto a destacar, es que OVT trata como cero los tiempos de latencia y búsqueda de DNS. Si bien en la interfaz gráfica se aprecian como tiempos menores a 1, al copiar la ruta al portapapeles se ilustran como iguales a 0.
+
+\subsubsection{Moodle}
+Para \emph{http://moodle.inf.utfsm.cl/}, se tienen la siguiente ruta tomada por los paquetes y los tiempos que han demorado aquellos paquetes en cada router a través del globo:\\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\# & País & Localidad & Latitud & Longitud & IP\\
+\hline
+1 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+\hline
+2 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.21.155\\
+\hline
+3 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.19.40\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Ruta por los paquetes al consultar la página de Moodle.}}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\# & Hostname & Latencia & Búsqueda & Distancia al nodo\\
+ &  & (ms) & DNS (ms) & anterior (km)\\
+\hline
+1 & nat-sj-labinf1.campus.utfsm.cl & 0 & 0 & 0\\
+\hline
+2 & gw-ext.inf.utfsm.cl. & 160 & 3 & 0\\
+\hline
+3 & moodle.inf.utfsm.cl. & 140 & 4 & 0\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Continuación de la tabla anterior.}}
+\end{table}
 
 \begin{figure}[H] 
 \centering 
-\includegraphics[width=1\textwidth]{imagenes/1.png} \caption{\small \textbf{Iniciando servidor}} 
+\includegraphics[width=1\textwidth]{imagenes/moodle_grafica.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar a Moodle.}} 
 \label{fig:diagrama_1} 
 \end{figure}
 
-Se escogió un servidor con protocolos TCP en vez de UDP debido a que se busca la integridad de los mensajes y archivos enviados.\\
+\subsubsection{Google}
+La tabla y gráficas siguientes corresponden a \emph{http://google.com/}:\\
 
-Luego, se inician los dos clientes con diferentes puertos entre ellos y con el servidor:\\
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\# & País & Localidad & Latitud & Longitud & IP\\
+\hline
+1 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+\hline
+2 & United States & Chicago & 41.884903 & -87.6238 & 192.169.2.1\\
+\hline
+3 & United States & Chicago & 41.884903 & -87.6238 & 192.169.3.2\\
+\hline
+4 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.21.131\\
+\hline
+5 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.131\\
+\hline
+6 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.0.173\\
+\hline
+7 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.5.57\\
+\hline
+8 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.186\\
+\hline
+9 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.5.86\\
+\hline
+10 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.13\\
+\hline
+11 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.26\\
+\hline
+12 & United States & Mountain View & 37.419205 & -122.0574 & 72.14.234.41\\
+\hline
+13 & United States & Mountain View & 37.419205 & -122.0574 & 173.194.42.216\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Ruta por los paquetes al consultar la página de Google.}}
+\end{table}
 
-De esta forma, posteriormente se puede acceder a mandar solicitudes de conexión y aceptarlas para poder mandar mensajes entre clientes a través del servidor TCP.
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\# & Hostname & Latencia & Búsqueda & Distancia al nodo\\
+ &  & (ms) & DNS (ms) & anterior (km)\\
+\hline
+1 & nat-sj-labinf1.campus.utfsm.cl & 0 & 0 & 0\\
+\hline
+2 & (None) & 1 & 2 & 8501\\
+\hline
+3 & (None) & 3 & 2 & 0\\
+\hline
+4 & fw.usm.cl. & 2 & 7 & 8501\\
+\hline
+5 & telmex-gw.usm.cl. & 2 & 3 & 0\\
+\hline
+6 & 190.208.0.173. & 4 & 9 & 97\\
+\hline
+7 & 190.208.5.57. & 2 & 17 & 0\\
+\hline
+8 & (None) & 1 & 3 & 0\\
+\hline
+9 & 190.208.5.86. & 1 & 13 & 0\\
+\hline
+10 & 190.208.9.13. & 1 & 2 & 0\\
+\hline
+11 & 190.208.9.26. & 1 & 2 & 0\\
+\hline
+12 & (None) & 9 & 153 & 9517\\
+\hline
+13 &  scl03s05-in-f24.1e100.net. & 2 & 3 & 0\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Continuación de la tabla anterior.}}
+\end{table}
 
-\subsection{Conectar ambos clientes}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/google_grafica.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar a Google.}} 
+\label{fig:diagrama_1} 
+\end{figure}
 
-Mediante la agregación de contactos realizado en la Tarea 1, los clientes quedan ''conectados'' además de registrados en la lista de contactos.\\
+\subsubsection{CIME}
+La tabla y gráficas que ahora siguen son las que corresponden al ingreso de \emph{http://cime.cl/}:\\
 
-\subsection{Captura de paquetes con Wireshark}
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\# & País & Localidad & Latitud & Longitud & IP\\
+\hline
+1 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+\hline
+2 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.21.131\\
+\hline
+3 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+\hline
+4 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.0.173\\
+\hline
+5 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.5.77\\
+\hline
+6 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.178\\
+\hline
+7 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.114\\
+\hline
+8 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.9\\
+\hline
+9 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.6\\
+\hline
+10 & United States & Englewood & 39.623703 & -104.8738 & 129.250.2.110\\
+\hline
+11 & United States & Englewood & 39.623703 & -104.8738 & 129.250.2.99\\
+\hline
+12 & United States & Englewood & 39.623703 & -104.8738 & 129.250.4.4\\
+\hline
+13 & United States & New York & 40.7267 & -73.9981 & 192.241.164.238\\
+\hline
+14 & United States & New York & 40.7267 & -73.9981 & 107.170.72.180\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Ruta por los paquetes al consultar la página de CIME.}}
+\end{table}
 
-Mediante la herramienta RawCap, que permite monitorear interfaces loopback (dado que se utilizó solo un computador para la ejecución, lo que quiere decir que el envío de mensajes es entre localhost y localhost) y permite generar un archivo \emph{.pcap} que Wireshark puede leer, se puede generar un registro de los paquetes transferidos, y luego ser visualizados con Wireshark:
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\# & Hostname & Latencia & Búsqueda & Distancia al nodo\\
+ &  & (ms) & DNS (ms) & anterior (km)\\
+\hline
+1 & nat-sj-labinf1.campus.utfsm.cl & 0 & 0 & 0\\
+\hline
+2 & fw.usm.cl. & 37 & 3 & 0\\
+\hline
+3 & telmex-gw.usm.cl. & 27 & 3 & 0\\
+\hline
+4 & 190.208.0.173. & 1 & 186 & 97\\
+\hline
+5 & 190.208.5.77. & 0 & 46 & 0\\
+\hline
+6 & (None) & 1 & 289 & 0\\
+\hline
+7 & Ge1-2.igr1.Santiago.ip.telmexchile.cl. & 59 & 84 & 0\\
+\hline
+8 & 190.208.9.9. & 36 & 62 & 0\\
+\hline
+9 & 190.208.9.6. & 36 & 27 & 0\\
+\hline
+10 & ae-3.r20.miamifl02.us.bb.gin.ntt.net. & 1 & 4 & 8864\\
+\hline
+11 & ae-8.r21.asbnva02.us.bb.gin.ntt.net. & 10 & 3 & 0\\
+\hline
+12 & ae-8.r20.asbnva02.us.bb.gin.ntt.net. & 46 & 4 & 0\\
+\hline
+13 & (None) & 34 & 10507 & 2615\\
+\hline
+14 & (None) & 1 & 369 & 0\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Continuación de la tabla anterior.}}
+\end{table}
 
-\subsection{Enviar un mensaje entre clientes}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/cime_grafica.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar a CIME.}}
+\label{fig:diagrama_1} 
+\end{figure}
 
-Para enviar un mensaje entre clientes, se identifica quien es el usuario emisor, y a quién va dirigido el mensaje, además del mensaje propiamente tal.
+\subsubsection{Wikipedia}
+Las tablas y gráfica para el ingreso a \emph{http://wikipedia.com/} son las siguientes:\\
 
-El otro cliente tiene la posibilidad de ver los mensajes recibidos mediante la opción habilitada en la página.
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\# & País & Localidad & Latitud & Longitud & IP\\
+\hline
+1 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+\hline
+2 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.21.131\\
+\hline
+3 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.131\\
+\hline
+4 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.0.173\\
+\hline
+5 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.5.77\\
+\hline
+6 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.178\\
+\hline
+7 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.206\\
+\hline
+8 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.9\\
+\hline
+9 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.6\\
+\hline
+10 & United States & Englewood & 39.623703 & -104.8738 & 157.238.179.17\\
+\hline
+11 & United States & Englewood & 39.623703 & -104.8738 & 129.250.2.184\\
+\hline
+12 & United States & Englewood & 39.623703 & -104.8738 & 129.250.4.207\\
+\hline
+13 & United States & Englewood & 39.623703 & -104.8738 & 129.250.204.190\\
+\hline
+14 & United States & San Francisco & 37.789795 & -122.394196 & 208.80.154.224\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Ruta por los paquetes al consultar la página de Wikipedia.}}
+\end{table}
 
-\subsection{Enviar una respuesta entre clientes}
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\# & Hostname & Latencia & Búsqueda & Distancia al nodo\\
+ &  & (ms) & DNS (ms) & anterior (km)\\
+\hline
+1 & nat-sj-labinf1.campus.utfsm.cl & 0 & 0 & 0\\
+\hline
+2 & fw.usm.cl. & 1 & 11 & 0\\
+\hline
+3 & telmex-gw.usm.cl. & 1 & 3 & 0\\
+\hline
+4 & 190.208.0.173. & 7 & 5 & 97\\
+\hline
+5 & 190.208.5.77. & 2 & 4 & 0\\
+\hline
+6 & (None) & 8 & 2 & 0\\
+\hline
+7 & (None) & 105 & 16 & 0\\
+\hline
+8 & 190.208.9.9. & 2 & 5 & 0\\
+\hline
+9 & 190.208.9.6. & 1 & 11 & 0\\
+\hline
+10 & xe-0-4-0-2.r05.miamfl02.us.bb.gin.ntt.net. & 69 & 6 & 8864\\
+\hline
+11 & ae-4.r20.miamfl02.us.bb.gin.ntt.net. & 25 & 3 & 0\\
+\hline
+12 & ae-2.r04.asbnva02.us.bb.gin.ntt.net. & 140 & 22 & 0\\
+\hline
+13 & xe-0-7-0-8.r04.asbnva02.us.ce.gin.ntt.net. & 69 & 3 & 0\\
+\hline
+14 & text-lb.eqiad.wikimedia.org. & 78 & 1584 & 1533\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Continuación de la tabla anterior.}}
+\end{table}
 
-Para enviar una respuesta entre clientes, se identifica quien es el usuario, y a quién va dirigida la respuesta, además del mensaje propiamente tal.
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/wiki_grafica.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar a Wikipedia.}}
+\label{fig:diagrama_1} 
+\end{figure}
 
-El otro cliente tiene la posibilidad de ver las respuestas recibidos mediante la opción habilitada en la página.\\
+\subsubsection{Embajada de Australia en Chile}
+Al ingresar a \emph{http://www.chile.embassy.gov.au/} se obtuvieron las siguientes tablas y gráfica que representa latencias. Cabe destacar que para el traceroute realizado a este sitio web, al llegar al router situado en Japón, OVT se quedó colgado, así que la ejecución terminó en ese punto.\\
 
-\subsection{Mostrar en Wireshark los mensajes enviados}
-En la figura 11, se observan los números de puertos de origen y de destino de los paquetes enviados. En el caso del puerto de origen, se ve que corresponde al 65172. Este puerto correspondería a un socket perteneciente al puerto 6666 que se ha definido en el código Java. El número 7777 corresponde al puerto en el que está escuchando el servidor TCP.\\
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\# & País & Localidad & Latitud & Longitud & IP\\
+\hline
+1 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.155\\
+\hline
+2 & United States & Chicago & 41.884903 & -87.6238 & 192.169.2.1\\
+\hline
+3 & United States & Chicago & 41.884903 & -87.6238 & 192.169.3.2\\
+\hline
+4 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.21.131\\
+\hline
+5 & Chile & Valparaiso & -33.047806 & -71.6011 & 200.1.20.131\\
+\hline
+6 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.0.173\\
+\hline
+7 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.5.53\\
+\hline
+8 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.178\\
+\hline
+9 & Chile & Santiago & -33.449997 & -70.6667 & 200.27.5.114\\
+\hline
+10 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.9\\
+\hline
+11 & Chile & Santiago & -33.449997 & -70.6667 & 190.208.9.86\\
+\hline
+12 & United States & New York & 40.758804 & -73.968 & 173.241.129.209\\
+\hline
+13 & France & (Unknown) & 48.86 & 2.350006 & 77.67.68.234\\
+\hline
+14 & France & (Unknown) & 48.86 & 2.350006 & 141.136.105.34\\
+\hline
+15 & Japan & (Unknown) & 35.690002 & 139.69 & 202.147.50.186\\
+\hline
+16 & Asia/Pacific Region & (Unknown) & 35.0 & 105.0 & 203.192.174.137\\
+\hline
+17 & Asia/Pacific Region & (Unknown) & 35.0 & 105.0 & 203.192.174.165\\
+\hline
+18 & Japan & (Unknown) & 35.690002 & 139.69 & 202.147.42.160\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Ruta por los paquetes al consultar la página de la embajada de Australia en Chile.}}
+\end{table}
 
-El socket asociado al puerto de cliente no tiene por qué ser el mismo, ya que a medida que se hace la transferencia de paquetes, el socket asociado a los puertos de cliente va cambiando, tal como se verá en la siguiente captura.\\
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\# & Hostname & Latencia & Búsqueda & Distancia al nodo\\
+ &  & (ms) & DNS (ms) & anterior (km)\\
+\hline
+1 & nat-sj-labinf1.campus.utfsm.cl & 0 & 0 & 0\\
+\hline
+2 & (None) & 2 & 7 & 8501\\
+\hline
+3 & (None) & 3 & 2 & 0\\
+\hline
+4 & fw.usm.cl. & 42 & 30 & 8501\\
+\hline
+5 & telmex-gw.usm.cl. & 2 & 5 & 0\\
+\hline
+6 & 190.208.0.173. & 41 & 3 & 97\\
+\hline
+7 & 190.208.5.53. & 1 & 4 & 0\\
+\hline
+8 & (None) & 7 & 7 & 0\\
+\hline
+9 & Ge1-2.igr1.Santiago.ip.telmexchile.cl. & 25 & 2 & 0\\
+\hline
+10 & 190.208.9.9. & 0 & 3 & 0\\
+\hline
+11 & 190.208.9.86. & 1 & 3 & 0\\
+\hline
+12 & ae2-202.nyc20.ip4.tinet.net. & 140 & 5 & 8267\\
+\hline
+13 & pacnet-gw.ip4.tinet.net. & 56 & 4 & 5837\\
+\hline
+14 & (None) & 10 & 12 & 0\\
+\hline
+15 & be1.gw4.sjc1.asianetcom.net. & 12 & 3 & 9722\\
+\hline
+16 & te0-1-0-0-981.cr2.syd5.asianetcom.net. & 151 & 22 & 3134\\
+\hline
+17 & te0-0-0-0.cr1.syd5.asianetcom.net. & 1 & 8 & 0\\
+\hline
+18 & ge-2-1-0-0.gw1.cbr1.asianetcom.net. & 129 & 4 & 3134\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Continuación de la tabla anterior.}}
+\end{table}
 
-En la figura 12 se puede observar un mensaje desde el servidor al cliente; en este caso, el puerto de origen es el del servidor que es el 7777, y el de destino es 65181, que vendría a ser un socket asentado en el puerto 6666 que se definió en el código Java para el cliente.\\
-
-Además, en esta imagen se pueden observar las IP de origen y destino de los paquetes, que en este caso son ambas iguales a 127.0.0.1, ya que el envío de mensajes se hizo en el mismo computador, o sea, desde \emph{localhost} a \emph{localhost}.
-
-En cuando a los números de secuencia y ACK's, en TCP se relacionan con la transferencia de datos fiable. Los números de secuencia, corresponden al primer byte numerado de cada segmento, y el ACK es el número de secuencia del siguiente byte que el otro host está esperando por recibir. En este sentido, al comienzo de la transmisión de paquetes, la primera señal que se envía es un SYN (sincronización de números de secuencia), y luego se puede observar que en el caso de envío desde cliente a servidor, el número de secuencia  va tomando el mismo valor del ACK anterior, mientras que el ACK toma el valor 1. Cuando el envío es desde servidor a cliente, ahora el número de secuencia es 1 y el ACK es uno más el mismo número de secuencia del envío servidor-cliente. Cabe destacar que la señal PSH quiere decir que no se ha esperado que el buffer se llene para enviar, sino que el paquete se envió de inmediato.
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/australia_grafica_sinfin.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar al sitio de la embajada de Australia en Chile.}}
+\label{fig:diagrama_1} 
+\end{figure}
 
 \newpage
 
-\subsection{Diagramas de conexiones con los puertos, sockets e IP's}
-El resultado del análisis del punto 2.6 usando \emph{Wireshark} es:\\
+\subsection{Aplicación del Algoritmo de Vector-Distancia}
 
 \end{document}
