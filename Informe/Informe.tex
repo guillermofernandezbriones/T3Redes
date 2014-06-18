@@ -58,7 +58,9 @@ En esta sección, se han analizado una serie de sitios web que, mediante el ingr
 \item {\it http://www.chile.embassy.gov.au/}
 \end{enumerate}
 
-El \emph{traceroute} realizado para cada sitio web ha sido usando la red del Departamento de Informática de la universidad ("di"). Se debe destacar que al estar conectado a "di", se reconoce al equipo como si estuviera conectado desde Valparaíso, donde se encuentran los servidores del departamento. Otro aspecto a destacar, es que OVT trata como cero los tiempos de latencia y búsqueda de DNS. Si bien en la interfaz gráfica se aprecian como tiempos menores a 1, al copiar la ruta al portapapeles se ilustran como iguales a 0.
+El \emph{traceroute} realizado para cada sitio web ha sido usando la red del Departamento de Informática de la universidad ("di"). Se debe destacar que al estar conectado a "di", se reconoce al equipo como si estuviera conectado desde Valparaíso, donde se encuentran los servidores del departamento. Otro aspecto a destacar, es que OVT trata como cero los tiempos de latencia y búsqueda de DNS. Si bien en la interfaz gráfica se aprecian como tiempos menores a 1, al copiar la ruta al portapapeles se ilustran como iguales a 0.\\
+
+Para un mejor orden, se ha dispuesto que la información de los pantallazos que muestran la ruta que han tomado los paquetes se presente en tablas hechas con código de \LaTeX. Los pantallazos se pueden observar en la carpeta ''imagenes'' del presente documento.
 
 \subsubsection{Moodle}
 Para \emph{http://moodle.inf.utfsm.cl/}, se tienen la siguiente ruta tomada por los paquetes y los tiempos que han demorado aquellos paquetes en cada router a través del globo:\\
@@ -457,6 +459,45 @@ Al ingresar a \emph{http://www.chile.embassy.gov.au/} se obtuvieron las siguient
 \includegraphics[width=1\textwidth]{imagenes/australia_grafica_sinfin.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar al sitio de la embajada de Australia en Chile.}}
 \label{fig:diagrama_1} 
 \end{figure}
+
+\subsubsection{Conclusiones y respuestas}
+\textbf{\textit{¿Por qué los paquetes toman las rutas descritas en el programa OVT?}} Los paquetes son direccionados por los routers de acuerdo a la información que manejan en sus tablas de ruteo. Hay que destacar que cada router no necesita saber la ruta completa para los paquetes en cuestión, sino que sólo les basta determinar el siguiente salto y por qué puerta de enlace deben enviarse los paquetes.\\
+
+El hecho de que para cada ocasión que se haga un traceroute se puedan obtener rutas ligeramente distintas, depende en primer lugar de la posición geográfica desde donde se efectúa la petición del sitio web, y el protocolo IP es quien determina cuál sería la mejor ruta para los saltos, adaptándose en todo momento a las condiciones de la red. Esto último quiere decir que las tablas de ruteo van cambiando con el tiempo.\\
+
+La ruta se va generando, esto es, el traceroute basa su funcionamiento en el uso del campo TTL (Time To Live) que contienen los datagramas IP. El TTL indica la cantidad de routers por los cuales el datagrama va a circular antes de que se le de por descartado. Colgándose de eso, traceroute lo que realiza es enviar los paquetes con TTL incrementales, partiendo desde TTL = 1. Siguiendo esa lógica, el primer paquete será descartado (el router al que llegó le decrementará su TTL a cero, por lo tanto se descarta), y entonces, el router que le ha desechado enviará de vuelta un mensaje ICMP "TTL Expired", que dentro de sí tiene el nombre del router al que llegó el paquete y su IP. Luego de ello, el emisor de los paquetes vuelve a enviar, pero con un TTL = 2, consiguiendo que el paquete pase no por un router, sino que por dos, y el segundo router hará lo mismo que hizo el primero cuando el paquete que se envió tenía TTL = 1. Después de toda la sucesión de pasos descritos, se puede ir completando la ruta con los datos obtenidos, y al llegar al router de destino, éste envía un mensaje ICMP "Dest port unreachable", y así el traceroute termina.\\
+
+\textbf{\textit{Y entonces, ¿cómo es que viajan los paquetes entre continentes?}} Usando la técnica anterior relacionada con los tiempos de vida, y también gracias a la fragmentación y reensamblaje (IPv4), los paquetes pueden ir viajando desde las redes más pequeñas y con menor calidad de tráfico, hasta redes mundiales de grandes prestaciones. Gracias a lo anterior, todo este viaje a través de la gran red de redes puede abrirse paso a través de los continentes por medio de las diversas tecnologías de comunicación que incluyen conexiones básicas como las telefónicas o inalámbricas caseras, pasando por conexiones 3G/4G, hasta enlaces físicos de mayor rendimientos como los cableados, de fibra óptica y satelitales, siendo enlaces como los últimos descritos los que se sitúan entre continentes.\\
+
+\textbf{\textit{Los enlaces internacionales de Chile}}, siguiendo la lógica de que corresponden a \emph{la dirección IP del último router situado en Chile antes de que se pase a uno del extranjero}, según los resultados obtenidos usando OVT, son los siguientes:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+Localidad & Latitud & Longitud & IP & Hostname\\
+\hline
+Santiago & -33.449997 & -70.6667 & 190.208.9.86 & 190.208.9.86.\\
+\hline
+Santiago & -33.449997 & -70.6667 & 190.208.9.6 & 190.208.9.6.\\
+\hline
+Santiago & -33.449997 & -70.6667 & 190.208.9.26 & 190.208.9.26.\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Enlaces internacionales de Chile.}}
+\end{table}
+
+Hay que destacar que en el caso de la embajada de Australia y Google para el enlace:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ c  c  c  c  c }
+Localidad & Latitud & Longitud & IP & Hostname\\
+Valparaíso & -33.047806 & -71.6011 & 200.1.20.155 & nat-sj-labinf1.campus.utfsm.cl\\
+\end{tabular}
+\end{table}
+
+que corresponde al router asociado a la red ''di'' de la universidad, hace un salto directo hacia el extranjero, no así para las otras páginas.
 
 \newpage
 
