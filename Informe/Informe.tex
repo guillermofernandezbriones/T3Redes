@@ -502,5 +502,19 @@ que corresponde al router asociado a la red ''di'' de la universidad, hace un sa
 \newpage
 
 \subsection{Aplicación del Algoritmo de Vector-Distancia}
+\subsubsection{Routeo Inicial}
+Existen diversas formas para que los router sepan hacia donde es conveniente enviar la información. Una de estas formas es el algorítmo de vector-distancia, que permite a los routers tener un valor estimado de la mejor via para llegar a otro punto.\\
+
+
+ 
+
+
+\subsubsection{Recuperación}
+
+Al perder la conexión entre I y H estos generan un aviso a sus vecinos, y estos a su vez a los suyos, avisando lo ocurrido para que todos los routers que hubiesen planificado una ruta por ahí, sepan que ya no existe y deben buscar una alternativa. Para esto se utiliza "horizonte dividio con envenenamiento de ruta"(split horizon with poisoned reverse), Que marca la distancia entre los caminos que sufrieron desconexión con el máximo de distancia (infinito), y luego recursivamente se avisa a los vecinos. Luego de esto, se recalculan todas las rutas necesarias actualizando las tablas de ruteo correspondientes\\
+
+
+
+ 
 
 \end{document}

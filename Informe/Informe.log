@@ -1,23 +1,21 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.24)  17 JUN 2014 23:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.13)  19 JUN 2014 20:08
 entering extended mode
 **Informe.tex
-
-("C:\Users\Memo\Documents\Universidad\Guias\Semestre 9\Redes de Computadores\La
-bs\L3\Informe\Informe.tex"
+(C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
 ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
  lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+("E:\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+("E:\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,19 +30,19 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("E:\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+("E:\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\spanish.ldf"
+("E:\MiKTeX 2.9\tex\generic\babel\spanish.ldf"
 Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+("E:\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
@@ -57,19 +55,19 @@ Package babel Info: Making . an active character on input line 585.
 Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("E:\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+("E:\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("E:\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -219,7 +217,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("E:\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -250,7 +248,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("E:\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -274,22 +272,22 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("E:\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("E:\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("E:\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("E:\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("E:\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count90
@@ -305,11 +303,11 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks18
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\moreverb\moreverb.sty"
+("E:\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("E:\MiKTeX 2.9\tex\latex\moreverb\moreverb.sty"
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+("E:\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks19
 \verbatim@line=\toks20
@@ -319,27 +317,27 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count94
 \listing@line=\count95
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("E:\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("E:\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("E:\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("E:\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("E:\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("E:\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("E:\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count96
@@ -347,7 +345,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+("E:\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count97
 \float@exts=\toks21
@@ -355,10 +353,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
+("E:\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
 Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+("E:\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count98
 \calc@Bcount=\count99
@@ -371,27 +369,27 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count100
 \calc@Cskip=\skip45
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
+("E:\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("E:\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("E:\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("E:\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks23
 \ex@=\dimen116
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("E:\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen117
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("E:\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count101
@@ -444,7 +442,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen130
 \l_MT_below_shortintertext_sep=\dimen131
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.sty"
+("E:\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.sty"
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
@@ -455,16 +453,15 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count115
 \FV@StepNumber=\count116
 \FV@OutFile=\write3
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+) ("E:\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("E:\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\iwona\iwona.sty"
+("E:\MiKTeX 2.9\tex\latex\iwona\iwona.sty"
 Package: iwona 2005/10/03 v.1.2 Iwona package (MW)
 \c@mv@iwona=\count117
 \c@mv@iwonabold=\count118
@@ -498,21 +495,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwonabold'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwonabold'
 (Font)                  OT1/cmr/m/it --> OT1/iwona/bx/it on input line 72.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("E:\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("E:\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+iwona on input line 100
 .
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\iwona\t1iwona.fd"
+("E:\MiKTeX 2.9\tex\latex\iwona\t1iwona.fd"
 File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
 ))
-("C:\Users\Memo\Documents\Universidad\Guias\Semestre 9\Redes de Computadores\La
-bs\L3\Informe\Informe.aux"
+(C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux
 
 LaTeX Warning: Label `fig:diagrama_1' multiply defined.
 
@@ -573,7 +569,7 @@ LaTeX Font Info:    ... okay on input line 31.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("E:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
 \scratchdimen=\dimen132
@@ -589,29 +585,29 @@ LaTeX Font Info:    ... okay on input line 31.
 )
 LaTeX Font Info:    Try loading font information for OT1+iwonam on input line 3
 3.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\iwona\ot1iwonam.fd"
+ ("E:\MiKTeX 2.9\tex\latex\iwona\ot1iwonam.fd"
 File: ot1iwonam.fd 2005/10/05 v1.2 font definition file for OT1/iwonam (MW)
 )
 LaTeX Font Info:    Try loading font information for OML+iwona on input line 33
 .
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\iwona\omliwona.fd"
+("E:\MiKTeX 2.9\tex\latex\iwona\omliwona.fd"
 File: omliwona.fd 2008/07/22 v0.995 font definition file for OML/iwona (MW)
 )
 LaTeX Font Info:    Try loading font information for OMS+iwona on input line 33
 .
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\iwona\omsiwona.fd"
+("E:\MiKTeX 2.9\tex\latex\iwona\omsiwona.fd"
 File: omsiwona.fd 2008/07/22 v0.995 font definition file for OMS/iwona (MW)
 )
 LaTeX Font Info:    Try loading font information for OMX+iwona on input line 33
 .
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\iwona\omxiwona.fd"
+("E:\MiKTeX 2.9\tex\latex\iwona\omxiwona.fd"
 File: omxiwona.fd 2008/07/22 v0.995 font definition file for OMX/iwona (MW)
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+{C:/Users/Álvaro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -632,9 +628,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-[4 <C:/Users/Memo/Documents/Universidad/Guias/Semestre 9/Redes de Computadores/
-Labs/L3/Informe/imagenes/moodle_grafica.png>]
-<imagenes/google_grafica.png, id=20, 689.57625pt x 205.5178pt>
+[4 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/moodle_grafica.p
+ng>] <imagenes/google_grafica.png, id=20, 689.57625pt x 205.5178pt>
 File: imagenes/google_grafica.png Graphic file (type png)
 
 <use imagenes/google_grafica.png>
@@ -645,9 +640,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
-[5 <C:/Users/Memo/Documents/Universidad/Guias/Semestre 9/Redes de Computadores/
-Labs/L3/Informe/imagenes/google_grafica.png>]
-<imagenes/cime_grafica.png, id=25, 687.31781pt x 206.27063pt>
+[5 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/google_grafica.p
+ng>] <imagenes/cime_grafica.png, id=25, 687.31781pt x 206.27063pt>
 File: imagenes/cime_grafica.png Graphic file (type png)
 
 <use imagenes/cime_grafica.png>
@@ -658,9 +652,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-[7 <C:/Users/Memo/Documents/Universidad/Guias/Semestre 9/Redes de Computadores/
-Labs/L3/Informe/imagenes/cime_grafica.png>]
-<imagenes/wiki_grafica.png, id=34, 685.05937pt x 204.01219pt>
+[7 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/cime_grafica.png
+>] <imagenes/wiki_grafica.png, id=34, 685.05937pt x 204.01219pt>
 File: imagenes/wiki_grafica.png Graphic file (type png)
 
 <use imagenes/wiki_grafica.png>
@@ -671,9 +664,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
-[8 <C:/Users/Memo/Documents/Universidad/Guias/Semestre 9/Redes de Computadores/
-Labs/L3/Informe/imagenes/wiki_grafica.png>]
-<imagenes/australia_grafica_sinfin.png, id=39, 686.565pt x 221.32687pt>
+[8 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/wiki_grafica.png
+>] <imagenes/australia_grafica_sinfin.png, id=39, 686.565pt x 221.32687pt>
 File: imagenes/australia_grafica_sinfin.png Graphic file (type png)
 
 <use imagenes/australia_grafica_sinfin.png>
@@ -700,28 +692,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 470--471
 
  []
 
-[10 <C:/Users/Memo/Documents/Universidad/Guias/Semestre 9/Redes de Computadores
-/Labs/L3/Informe/imagenes/australia_grafica_sinfin.png>] [11] [12]
-("C:\Users\Memo\Documents\Universidad\Guias\Semestre 9\Redes de Computadores\La
-bs\L3\Informe\Informe.aux")
+[10 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/australia_grafi
+ca_sinfin.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+[12] (C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4640 strings out of 493921
- 63833 string characters out of 3144878
+ 4642 strings out of 493921
+ 61436 string characters out of 3152890
  141109 words of memory out of 3000000
- 7858 multiletter control sequences out of 15000+200000
+ 7860 multiletter control sequences out of 15000+200000
  68536 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  33i,12n,32p,1202b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc}<C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonabi.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/nowacki/iwona/iwonari.pfb>
-Output written on Informe.pdf (12 pages, 213959 bytes).
+{E:/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc}<E:/MiKTeX 2.9/fonts/type1/
+nowacki/iwona/iwonab.pfb><E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonabi.pfb><
+E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><E:/MiKTeX 2.9/fonts/type1/n
+owacki/iwona/iwonari.pfb>
+Output written on Informe.pdf (12 pages, 214865 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
