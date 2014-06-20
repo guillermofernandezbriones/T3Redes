@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.13)  19 JUN 2014 20:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.13)  19 JUN 2014 21:38
 entering extended mode
 **Informe.tex
 (C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.tex
@@ -508,32 +508,33 @@ LaTeX Font Info:    Try loading font information for T1+iwona on input line 100
 ("E:\MiKTeX 2.9\tex\latex\iwona\t1iwona.fd"
 File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
 ))
-(C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux
+("E:\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-LaTeX Warning: Label `fig:diagrama_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:diagrama_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:diagrama_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:diagrama_1' multiply defined.
-
+("E:\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen132
+\extrarowheight=\dimen133
+\NC@list=\toks28
+\extratabsurround=\skip50
+\backup@length=\skip51
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+\everycr=\toks29
+\minrowclearance=\skip52
+)
+(C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -572,35 +573,35 @@ LaTeX Font Info:    ... okay on input line 31.
 ("E:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
-\scratchdimen=\dimen132
+\scratchdimen=\dimen134
 \scratchbox=\box31
 \nofMPsegments=\count120
 \nofMParguments=\count121
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count122
-\MPscratchDim=\dimen133
+\MPscratchDim=\dimen135
 \MPnumerator=\count123
 \makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks31
 )
 LaTeX Font Info:    Try loading font information for OT1+iwonam on input line 3
-3.
+4.
  ("E:\MiKTeX 2.9\tex\latex\iwona\ot1iwonam.fd"
 File: ot1iwonam.fd 2005/10/05 v1.2 font definition file for OT1/iwonam (MW)
 )
-LaTeX Font Info:    Try loading font information for OML+iwona on input line 33
+LaTeX Font Info:    Try loading font information for OML+iwona on input line 34
 .
 
 ("E:\MiKTeX 2.9\tex\latex\iwona\omliwona.fd"
 File: omliwona.fd 2008/07/22 v0.995 font definition file for OML/iwona (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+iwona on input line 33
+LaTeX Font Info:    Try loading font information for OMS+iwona on input line 34
 .
 
 ("E:\MiKTeX 2.9\tex\latex\iwona\omsiwona.fd"
 File: omsiwona.fd 2008/07/22 v0.995 font definition file for OMS/iwona (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+iwona on input line 33
+LaTeX Font Info:    Try loading font information for OMX+iwona on input line 34
 .
 
 ("E:\MiKTeX 2.9\tex\latex\iwona\omxiwona.fd"
@@ -608,12 +609,12 @@ File: omxiwona.fd 2008/07/22 v0.995 font definition file for OMX/iwona (MW)
 ) [1
 
 {C:/Users/Álvaro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
@@ -621,10 +622,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 File: imagenes/moodle_grafica.png Graphic file (type png)
 
 <use imagenes/moodle_grafica.png>
-Package pdftex.def Info: imagenes/moodle_grafica.png used on input line 103.
+Package pdftex.def Info: imagenes/moodle_grafica.png used on input line 104.
 (pdftex.def)             Requested size: 472.03123pt x 141.71227pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
@@ -633,10 +634,10 @@ ng>] <imagenes/google_grafica.png, id=20, 689.57625pt x 205.5178pt>
 File: imagenes/google_grafica.png Graphic file (type png)
 
 <use imagenes/google_grafica.png>
-Package pdftex.def Info: imagenes/google_grafica.png used on input line 185.
+Package pdftex.def Info: imagenes/google_grafica.png used on input line 186.
 (pdftex.def)             Requested size: 472.03123pt x 140.68163pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
@@ -645,10 +646,10 @@ ng>] <imagenes/cime_grafica.png, id=25, 687.31781pt x 206.27063pt>
 File: imagenes/cime_grafica.png Graphic file (type png)
 
 <use imagenes/cime_grafica.png>
-Package pdftex.def Info: imagenes/cime_grafica.png used on input line 271.
+Package pdftex.def Info: imagenes/cime_grafica.png used on input line 272.
 (pdftex.def)             Requested size: 472.03123pt x 141.65962pt.
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
@@ -657,10 +658,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 File: imagenes/wiki_grafica.png Graphic file (type png)
 
 <use imagenes/wiki_grafica.png>
-Package pdftex.def Info: imagenes/wiki_grafica.png used on input line 357.
+Package pdftex.def Info: imagenes/wiki_grafica.png used on input line 358.
 (pdftex.def)             Requested size: 472.03123pt x 140.57555pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
@@ -670,57 +671,54 @@ File: imagenes/australia_grafica_sinfin.png Graphic file (type png)
 
 <use imagenes/australia_grafica_sinfin.png>
 Package pdftex.def Info: imagenes/australia_grafica_sinfin.png used on input li
-ne 459.
+ne 460.
 (pdftex.def)             Requested size: 472.03123pt x 152.1652pt.
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--467
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--469
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
 [10 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/australia_grafi
 ca_sinfin.png>] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
-[12] (C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[12] (C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux) ) 
 Here is how much of TeX's memory you used:
- 4642 strings out of 493921
- 61436 string characters out of 3152890
- 141109 words of memory out of 3000000
- 7860 multiletter control sequences out of 15000+200000
+ 4744 strings out of 493921
+ 62606 string characters out of 3152890
+ 143731 words of memory out of 3000000
+ 7956 multiletter control sequences out of 15000+200000
  68536 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,12n,32p,1202b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc}<E:/MiKTeX 2.9/fonts/type1/
-nowacki/iwona/iwonab.pfb><E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonabi.pfb><
-E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><E:/MiKTeX 2.9/fonts/type1/n
-owacki/iwona/iwonari.pfb>
-Output written on Informe.pdf (12 pages, 214865 bytes).
+ 34i,14n,32p,1202b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+{E:/MiKTe
+X 2.9/fonts/enc/dvips/iwona/ec-iwona.enc}<E:/MiKTeX 2.9/fonts/type1/nowacki/iwo
+na/iwonab.pfb><E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonabi.pfb><E:/MiKTeX 2
+.9/fonts/type1/nowacki/iwona/iwonar.pfb><E:/MiKTeX 2.9/fonts/type1/nowacki/iwon
+a/iwonari.pfb>
+Output written on Informe.pdf (12 pages, 216506 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

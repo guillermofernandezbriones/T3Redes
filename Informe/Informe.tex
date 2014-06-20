@@ -10,6 +10,7 @@
 \usepackage{color}
 \usepackage[math]{iwona}
 \usepackage[T1]{fontenc}
+\usepackage{colortbl}
 
 \title{\begin{Huge} Redes de Computadores\\
 Tarea 3 \\
@@ -183,7 +184,7 @@ La tabla y gráficas siguientes corresponden a \emph{http://google.com/}:\\
 \begin{figure}[H] 
 \centering 
 \includegraphics[width=1\textwidth]{imagenes/google_grafica.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar a Google.}} 
-\label{fig:diagrama_1} 
+\label{fig:diagrama_2} 
 \end{figure}
 
 \subsubsection{CIME}
@@ -269,7 +270,7 @@ La tabla y gráficas que ahora siguen son las que corresponden al ingreso de \em
 \begin{figure}[H] 
 \centering 
 \includegraphics[width=1\textwidth]{imagenes/cime_grafica.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar a CIME.}}
-\label{fig:diagrama_1} 
+\label{fig:diagrama_3} 
 \end{figure}
 
 \subsubsection{Wikipedia}
@@ -355,7 +356,7 @@ Las tablas y gráfica para el ingreso a \emph{http://wikipedia.com/} son las sig
 \begin{figure}[H] 
 \centering 
 \includegraphics[width=1\textwidth]{imagenes/wiki_grafica.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar a Wikipedia.}}
-\label{fig:diagrama_1} 
+\label{fig:diagrama_4} 
 \end{figure}
 
 \subsubsection{Embajada de Australia en Chile}
@@ -457,7 +458,7 @@ Al ingresar a \emph{http://www.chile.embassy.gov.au/} se obtuvieron las siguient
 \begin{figure}[H] 
 \centering 
 \includegraphics[width=1\textwidth]{imagenes/australia_grafica_sinfin.png} \caption{\small \textbf{Tiempos de latencia de paquetes al ingresar al sitio de la embajada de Australia en Chile.}}
-\label{fig:diagrama_1} 
+\label{fig:diagrama_5} 
 \end{figure}
 
 \subsubsection{Conclusiones y respuestas}
@@ -505,8 +506,41 @@ que corresponde al router asociado a la red ''di'' de la universidad, hace un sa
 \subsubsection{Routeo Inicial}
 Existen diversas formas para que los router sepan hacia donde es conveniente enviar la información. Una de estas formas es el algorítmo de vector-distancia, que permite a los routers tener un valor estimado de la mejor via para llegar a otro punto.\\
 
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+\hline
+\#  & A & B & C & D & E & F & G & H & I\\
+\hline
+A & 0 & 1 & INF & INF & INF & INF & 4 & INF & 10\\
+\hline
+B & 1 & 0 & 9 & INF & 8 & INF & INF & INF & INF\\
+\hline
+C & INF & 9 & 0 & 2 & INF & INF & INF & INF & INF\\
+\hline
+D & INF & INF & 2 & 0 & 9 & 4 & INF & INF & 2\\
+\hline
+E & INF & 8 & INF & 9 & 0 & 2 & INF & INF & 1\\
+\hline
+F & INF & INF & INF & 4 & 2 & 0 & INF & 6 & INF\\
+\hline
+G & 4 & INF & INF & INF & INF & INF & 0 & 7 & INF\\
+\hline
+H & INF & INF & INF & INF & INF & 6 & 7 & 0 & 3\\
+\hline
+I & 10 & INF & INF & 2 & 1 & INF & INF & 3 & 0\\
+\hline
+\end{tabular}
+\caption{\small \textbf{Vectores Iniciales.}}
+\end{table}
 
- 
+	Al inicio, los routers solo saben cuanto les cuesta llegar hasta sus vecinos, así que con esos datos obtienen su vector-distancia inicial, rellenando los valores que se desconocen con "infinito". Luego, en cada iteración, los vecinos comparten las distancias que obtienen, y con estos nuevos datos cada router re-calcula sus vectores-distancia seleccionando el que tenga un valor menor desde su posición. 
+
+
+
+
+
+
 
 
 \subsubsection{Recuperación}
