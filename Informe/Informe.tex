@@ -504,51 +504,457 @@ que corresponde al router asociado a la red ''di'' de la universidad, hace un sa
 
 \subsection{Aplicación del Algoritmo de Vector-Distancia}
 \subsubsection{Routeo Inicial}
-Existen diversas formas para que los router sepan hacia donde es conveniente enviar la información. Una de estas formas es el algorítmo de vector-distancia, que permite a los routers tener un valor estimado de la mejor via para llegar a otro punto.\\
+Existen diversas formas para que los router sepan por donde es conveniente enviar la información. Una de estas formas es el algorítmo de vector-distancia, que permite a los routers tener un valor estimado de la mejor via para llegar a otro punto. Este algoritmo funciona de la siguiente forma:\\
+	
+	Los routers siempre están esperando a recibir avisos desde los routers vecinos sobre el cambio de alguno de sus vectores distancia o esperar a un cambio en el costo de un enlace local.\
+	
+	Cuando alguno de estos acontecimientos sucede, el router recalcula su vector-distancia si es que es necesario. Si es que con la recalcularización se cambia algun valor, se avisa a todos los vecinos para que tambien actualicen sus vectores distancia, enviando el nuevo vector para que los vecinos se enteren del cambio.\\
+	
+	En el caso expuesto en la tarea, se asume que los routers no tienen la información de como llegar hasta todos los routers de la red (por lo que se les asigna el valor $\infty$)\
+	Para Calcula las distancias, se utiliza la ecuación de Bellman-Ford, que dice que $d_{x}(y)$:= "costo del camino menor de x a y"; y que $c(x,v)$:= "es el costo del camino desde x hasta v" ; por lo tanto se define:\\
+\ \	- $d_{x}(y)=min( c(x,v) + d_{v}(y))$ ; siendo v vecino de x.\\
 
-\begin{table}[H]
-\centering
-\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
-\hline
-\#  & A & B & C & D & E & F & G & H & I\\
-\hline
-A & 0 & 1 & INF & INF & INF & INF & 4 & INF & 10\\
-\hline
-B & 1 & 0 & 9 & INF & 8 & INF & INF & INF & INF\\
-\hline
-C & INF & 9 & 0 & 2 & INF & INF & INF & INF & INF\\
-\hline
-D & INF & INF & 2 & 0 & 9 & 4 & INF & INF & 2\\
-\hline
-E & INF & 8 & INF & 9 & 0 & 2 & INF & INF & 1\\
-\hline
-F & INF & INF & INF & 4 & 2 & 0 & INF & 6 & INF\\
-\hline
-G & 4 & INF & INF & INF & INF & INF & 0 & 7 & INF\\
-\hline
-H & INF & INF & INF & INF & INF & 6 & 7 & 0 & 3\\
-\hline
-I & 10 & INF & INF & 2 & 1 & INF & INF & 3 & 0\\
-\hline
-\end{tabular}
-\caption{\small \textbf{Vectores Iniciales.}}
-\end{table}
-
-	Al inicio, los routers solo saben cuanto les cuesta llegar hasta sus vecinos, así que con esos datos obtienen su vector-distancia inicial, rellenando los valores que se desconocen con "infinito". Luego, en cada iteración, los vecinos comparten las distancias que obtienen, y con estos nuevos datos cada router re-calcula sus vectores-distancia seleccionando el que tenga un valor menor desde su posición. 
-
-
-
-
-
-
-
-
+	Es así como se generaron las tablas de la primera parte de Anexos(páginas 13-36) iteración por iteración. Donde en primera instancia se tenian únicamente los costos hacia los vecinos. Cabe destacar que los costos desde el PC con el router A y del router I con el Servidor no fueron considerados para el cálculo del vector-distancia dado que son los únicos accesos hacia ellos.
+	
 \subsubsection{Recuperación}
 
-Al perder la conexión entre I y H estos generan un aviso a sus vecinos, y estos a su vez a los suyos, avisando lo ocurrido para que todos los routers que hubiesen planificado una ruta por ahí, sepan que ya no existe y deben buscar una alternativa. Para esto se utiliza "horizonte dividio con envenenamiento de ruta"(split horizon with poisoned reverse), Que marca la distancia entre los caminos que sufrieron desconexión con el máximo de distancia (infinito), y luego recursivamente se avisa a los vecinos. Luego de esto, se recalculan todas las rutas necesarias actualizando las tablas de ruteo correspondientes\\
+	En la tercera parte del informe se pregunta sobre que pasaria si existiera 
+un corte en el enlace que unen los routers H e I.\\\
+	Para este caso, y sabiendo que rehacer desde 0 no es lo que realiza el algorítmo vector-distancia, se intentó una recuperación de la información utilizando la técnica de "horizonte dividio con envenenamiento de ruta"(split horizon with poisoned reverse). Esta técnica sugiere que:\\
+	'Cuando se envía un mensaje Response por una interfaz I, aquellas entradas que han sido aprendidas desde un vecino directamente conectado a la red en I, se transmiten con distancia infinita'.\\
+	De esta forma, todas los routers que tenian un vector-distancia que utilizara el enlace caido, pondrán como  $\infty$ dicho costo de camino, con lo que en las siguientes iteraciones del algoritmo vector distancia, utilizarán otros caminos para llegar a los destinos "perdidos".\\
+	
+	Fue esto lo que se realizó sobre los routers, y las tablas de ruteo que se genraron en 3 iteraciones ( revisar segunda parte de Anexos, desde la página 37 hasta la 48).\\
 
-
-
+\newpage
+\section{Anexos}
  
+\subsection{Tablas Vector-Distancia Parte2}
+Los colores que se utilizan en las tablas de la parte2 y parte3 hacen referencia a los siguientes conceptos:
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.3\textwidth]{imagenes/simbologia.png} \caption{\small \textbf{Simbologia}}
+\label{fig:diagrama_6} 
+\end{figure}
+
+\subsubsection{Inicial}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicial.png} \caption{\small \textbf{Resumen estado inicial de todos los routers}}
+\label{fig:diagrama_7} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialA.png} \caption{\small \textbf{Vector Distancia inicial router A}}
+\label{fig:diagrama_8} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialB.png} \caption{\small \textbf{Vector Distancia inicial router B}}
+\label{fig:diagrama_9} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialC.png} \caption{\small \textbf{Vector Distancia inicial router C}}
+\label{fig:diagrama_10} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialD.png} \caption{\small \textbf{Vector Distancia inicial router D}}
+\label{fig:diagrama_11} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialE.png} \caption{\small \textbf{Vector Distancia inicial router E}}
+\label{fig:diagrama_12} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialF.png} \caption{\small \textbf{Vector Distancia inicial router F}}
+\label{fig:diagrama_13} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialG.png} \caption{\small \textbf{Vector Distancia inicial router G}}
+\label{fig:diagrama_14} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialH.png} \caption{\small \textbf{Vector Distancia inicial router H}}
+\label{fig:diagrama_15} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2inicialI.png} \caption{\small \textbf{Vector Distancia inicial router I}}
+\label{fig:diagrama_16} 
+\end{figure}
+
+\subsubsection{Iteración 1}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2A1.png} \caption{\small \textbf{Vector Distancia primera iteración router A}}
+\label{fig:diagrama_17} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2B1.png} \caption{\small \textbf{Vector Distancia primera iteración router B}}
+\label{fig:diagrama_18} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2C1.png} \caption{\small \textbf{Vector Distancia primera iteración router C}}
+\label{fig:diagrama_19} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2D1.png} \caption{\small \textbf{Vector Distancia primera iteración router D}}
+\label{fig:diagrama_20} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2E1.png} \caption{\small \textbf{Vector Distancia primera iteración router E}}
+\label{fig:diagrama_21} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2F1.png} \caption{\small \textbf{Vector Distancia primera iteración router F}}
+\label{fig:diagrama_22} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2G1.png} \caption{\small \textbf{Vector Distancia primera iteración router G}}
+\label{fig:diagrama_23} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2H1.png} \caption{\small \textbf{Vector Distancia primera iteración router H}}
+\label{fig:diagrama_24} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2I1.png} \caption{\small \textbf{Vector Distancia primera iteración router I}}
+\label{fig:diagrama_25} 
+\end{figure}
+
+\newpage
+
+\subsubsection{Iteración 2}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2A2.png} \caption{\small \textbf{Vector Distancia segunda iteración router A}}
+\label{fig:diagrama_26} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2B2.png} \caption{\small \textbf{Vector Distancia segunda iteración router B}}
+\label{fig:diagrama_27} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2C2.png} \caption{\small \textbf{Vector Distancia segunda iteración router C}}
+\label{fig:diagrama_28} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2D2.png} \caption{\small \textbf{Vector Distancia segunda iteración router D}}
+\label{fig:diagrama_29} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2E2.png} \caption{\small \textbf{Vector Distancia segunda iteración router E}}
+\label{fig:diagrama_30} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2F2.png} \caption{\small \textbf{Vector Distancia segunda iteración router F}}
+\label{fig:diagrama_31} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2G2.png} \caption{\small \textbf{Vector Distancia segunda iteración router G}}
+\label{fig:diagrama_32} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2H2.png} \caption{\small \textbf{Vector Distancia segunda iteración router H}}
+\label{fig:diagrama_33} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2I2.png} \caption{\small \textbf{Vector Distancia segunda iteración router I}}
+\label{fig:diagrama_34} 
+\end{figure}
+
+\subsubsection{Iteración 3}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2A3.png} \caption{\small \textbf{Vector Distancia tercera iteración router A}}
+\label{fig:diagrama_35} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2B3.png} \caption{\small \textbf{Vector Distancia tercera iteración router B}}
+\label{fig:diagrama_36} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2C3.png} \caption{\small \textbf{Vector Distancia tercera iteración router C}}
+\label{fig:diagrama_37} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2D3.png} \caption{\small \textbf{Vector Distancia tercera iteración router D}}
+\label{fig:diagrama_38} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2E3.png} \caption{\small \textbf{Vector Distancia tercera iteración router E}}
+\label{fig:diagrama_39} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2F3.png} \caption{\small \textbf{Vector Distancia tercera iteración router F}}
+\label{fig:diagrama_40} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2G3.png} \caption{\small \textbf{Vector Distancia tercera iteración router G}}
+\label{fig:diagrama_41} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2H3.png} \caption{\small \textbf{Vector Distancia tercera iteración router H}}
+\label{fig:diagrama_42} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2I3.png} \caption{\small \textbf{Vector Distancia tercera iteración router I}}
+\label{fig:diagrama_43} 
+\end{figure}
+
+\newpage
+
+\subsubsection{Iteración 4}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2A4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router A}}
+\label{fig:diagrama_44} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2B4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router B}}
+\label{fig:diagrama_45} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2C4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router C}}
+\label{fig:diagrama_46} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2D4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router D}}
+\label{fig:diagrama_47} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2E4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router E}}
+\label{fig:diagrama_48} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2F4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router F}}
+\label{fig:diagrama_49} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2G4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router G}}
+\label{fig:diagrama_50} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2H4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router H}}
+\label{fig:diagrama_51} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2I4.png} \caption{\small \textbf{Vector Distancia cuarta iteración router I}}
+\label{fig:diagrama_52} 
+\end{figure}
+
+\subsubsection{Final}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/2final.png} \caption{\small \textbf{Resumen estado final de todos los routers}}
+\label{fig:diagrama_53} 
+\end{figure}
+
+\newpage
+
+\subsection{Tablas Vector-Distancia Parte3}
+Se utiliza la misma simbologia en los colores descrita en la primera parte de los Anexos.
+\subsubsection{Inicial}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.65\textwidth]{imagenes/3inicial.png} \caption{\small \textbf{Resumen estado inicial de todos los routers}}
+\label{fig:diagrama_54} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialA.png} \caption{\small \textbf{Vector Distancia inicial router A}}
+\label{fig:diagrama_55} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialB.png} \caption{\small \textbf{Vector Distancia inicial router B}}
+\label{fig:diagrama_56} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialC.png} \caption{\small \textbf{Vector Distancia inicial router C}}
+\label{fig:diagrama_57} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialD.png} \caption{\small \textbf{Vector Distancia inicial router D}}
+\label{fig:diagrama_58} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialE.png} \caption{\small \textbf{Vector Distancia inicial router E}}
+\label{fig:diagrama_59} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialF.png} \caption{\small \textbf{Vector Distancia inicial router F}}
+\label{fig:diagrama_60} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialG.png} \caption{\small \textbf{Vector Distancia inicial router G}}
+\label{fig:diagrama_61} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialH.png} \caption{\small \textbf{Vector Distancia inicial router H}}
+\label{fig:diagrama_62} 
+\end{figure}
+\begin{figure}[H] 
+\includegraphics[width=1\textwidth]{imagenes/3inicialI.png} \caption{\small \textbf{Vector Distancia inicial router I}}
+\label{fig:diagrama_63} 
+\end{figure}
+
+\subsubsection{Iteración 1-2}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3A1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router A}}
+\label{fig:diagrama_64} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3B1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router B}}
+\label{fig:diagrama_65} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3C1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router C}}
+\label{fig:diagrama_66} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3D1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router D}}
+\label{fig:diagrama_67} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3E1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router E}}
+\label{fig:diagrama_68} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3F1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router F}}
+\label{fig:diagrama_69} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3G1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router G}}
+\label{fig:diagrama_70} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3H1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router H}}
+\label{fig:diagrama_71} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3I1-2.png} \caption{\small \textbf{Vector Distancia primera y segunda iteraciones router I}}
+\label{fig:diagrama_72} 
+\end{figure}
+
+\subsubsection{Iteración 3}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3A3.png} \caption{\small \textbf{Vector Distancia tercera iteración router A}}
+\label{fig:diagrama_73} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3B3.png} \caption{\small \textbf{Vector Distancia tercera iteración router B}}
+\label{fig:diagrama_74} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3C3.png} \caption{\small \textbf{Vector Distancia tercera iteración router C}}
+\label{fig:diagrama_75} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3D3.png} \caption{\small \textbf{Vector Distancia tercera iteración router D}}
+\label{fig:diagrama_76} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3E3.png} \caption{\small \textbf{Vector Distancia tercera iteración router E}}
+\label{fig:diagrama_77} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3F3.png} \caption{\small \textbf{Vector Distancia tercera iteración router F}}
+\label{fig:diagrama_78} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3G3.png} \caption{\small \textbf{Vector Distancia tercera iteración router G}}
+\label{fig:diagrama_79} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3H3.png} \caption{\small \textbf{Vector Distancia tercera iteración router H}}
+\label{fig:diagrama_80} 
+\end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.7\textwidth]{imagenes/3I3.png} \caption{\small \textbf{Vector Distancia tercera iteración router I}}
+\label{fig:diagrama_81} 
+\end{figure}
+
+\newpage
+
+\subsubsection{Final}
+
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=1\textwidth]{imagenes/3final.png} \caption{\small \textbf{Resumen estado final de todos los routers}}
+\label{fig:diagrama_82} 
+\end{figure}
 
 \end{document}

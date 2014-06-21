@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.13)  19 JUN 2014 21:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.13)  20 JUN 2014 21:27
 entering extended mode
 **Informe.tex
 (C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.tex
@@ -700,27 +700,596 @@ Underfull \hbox (badness 10000) in paragraph at lines 507--508
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
 
  []
 
-[12] (C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+[12] [13] <imagenes/simbologia.png, id=61, 97.5645pt x 63.8385pt>
+File: imagenes/simbologia.png Graphic file (type png)
+
+<use imagenes/simbologia.png>
+Package pdftex.def Info: imagenes/simbologia.png used on input line 537.
+(pdftex.def)             Requested size: 141.61081pt x 92.65987pt.
+
+<imagenes/2inicial.png, id=62, 220.4235pt x 157.18726pt>
+File: imagenes/2inicial.png Graphic file (type png)
+
+<use imagenes/2inicial.png>
+Package pdftex.def Info: imagenes/2inicial.png used on input line 545.
+(pdftex.def)             Requested size: 306.81741pt x 218.81102pt.
+
+<imagenes/2inicialA.png, id=63, 221.02576pt x 157.7895pt>
+File: imagenes/2inicialA.png Graphic file (type png)
+
+<use imagenes/2inicialA.png>
+Package pdftex.def Info: imagenes/2inicialA.png used on input line 551.
+(pdftex.def)             Requested size: 306.81741pt x 219.05951pt.
+ [14 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/simbologia.png
+> <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicial.png>]
+<imagenes/2inicialB.png, id=69, 221.02576pt x 157.18726pt>
+File: imagenes/2inicialB.png Graphic file (type png)
+
+<use imagenes/2inicialB.png>
+Package pdftex.def Info: imagenes/2inicialB.png used on input line 557.
+(pdftex.def)             Requested size: 306.81741pt x 218.2234pt.
+
+<imagenes/2inicialC.png, id=70, 221.02576pt x 157.7895pt>
+File: imagenes/2inicialC.png Graphic file (type png)
+
+<use imagenes/2inicialC.png>
+Package pdftex.def Info: imagenes/2inicialC.png used on input line 563.
+(pdftex.def)             Requested size: 306.81741pt x 219.05951pt.
+ [15 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialA.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialB.png>]
+<imagenes/2inicialD.png, id=76, 220.4235pt x 157.18726pt>
+File: imagenes/2inicialD.png Graphic file (type png)
+
+<use imagenes/2inicialD.png>
+Package pdftex.def Info: imagenes/2inicialD.png used on input line 569.
+(pdftex.def)             Requested size: 306.81741pt x 218.81102pt.
+
+<imagenes/2inicialE.png, id=77, 220.4235pt x 158.39175pt>
+File: imagenes/2inicialE.png Graphic file (type png)
+
+<use imagenes/2inicialE.png>
+Package pdftex.def Info: imagenes/2inicialE.png used on input line 575.
+(pdftex.def)             Requested size: 306.81741pt x 220.48775pt.
+ [16 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialC.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialD.png>]
+<imagenes/2inicialF.png, id=83, 220.4235pt x 157.7895pt>
+File: imagenes/2inicialF.png Graphic file (type png)
+
+<use imagenes/2inicialF.png>
+Package pdftex.def Info: imagenes/2inicialF.png used on input line 581.
+(pdftex.def)             Requested size: 306.81741pt x 219.64938pt.
+
+<imagenes/2inicialG.png, id=84, 219.82124pt x 157.18726pt>
+File: imagenes/2inicialG.png Graphic file (type png)
+
+<use imagenes/2inicialG.png>
+Package pdftex.def Info: imagenes/2inicialG.png used on input line 587.
+(pdftex.def)             Requested size: 306.81741pt x 219.40346pt.
+ [17 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialE.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialF.png>]
+<imagenes/2inicialH.png, id=90, 221.628pt x 158.39175pt>
+File: imagenes/2inicialH.png Graphic file (type png)
+
+<use imagenes/2inicialH.png>
+Package pdftex.def Info: imagenes/2inicialH.png used on input line 593.
+(pdftex.def)             Requested size: 306.81741pt x 219.27448pt.
+
+<imagenes/2inicialI.png, id=91, 221.02576pt x 157.7895pt>
+File: imagenes/2inicialI.png Graphic file (type png)
+
+<use imagenes/2inicialI.png>
+Package pdftex.def Info: imagenes/2inicialI.png used on input line 599.
+(pdftex.def)             Requested size: 306.81741pt x 219.05951pt.
+ [18 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialG.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialH.png>] <i
+magenes/2A1.png, id=97, 210.18526pt x 158.39175pt>
+File: imagenes/2A1.png Graphic file (type png)
+
+<use imagenes/2A1.png>
+Package pdftex.def Info: imagenes/2A1.png used on input line 607.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ <imagenes/2B1.png, id=98, 210.18526pt x 158.39175pt>
+File: imagenes/2B1.png Graphic file (type png)
+
+<use imagenes/2B1.png>
+Package pdftex.def Info: imagenes/2B1.png used on input line 612.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ <imagenes/2C1.png, id=99, 210.18526pt x 158.39175pt>
+File: imagenes/2C1.png Graphic file (type png)
+
+<use imagenes/2C1.png>
+Package pdftex.def Info: imagenes/2C1.png used on input line 617.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ [19 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2inicialI.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2A1.png>] <imagene
+s/2D1.png, id=106, 210.18526pt x 158.39175pt>
+File: imagenes/2D1.png Graphic file (type png)
+
+<use imagenes/2D1.png>
+Package pdftex.def Info: imagenes/2D1.png used on input line 622.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ <imagenes/2E1.png, id=107, 210.18526pt x 158.39175pt>
+File: imagenes/2E1.png Graphic file (type png)
+
+<use imagenes/2E1.png>
+Package pdftex.def Info: imagenes/2E1.png used on input line 627.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ [20 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2B1.png> <C:/U
+sers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2C1.png>] <imagenes/2F1.
+png, id=113, 210.18526pt x 158.39175pt>
+File: imagenes/2F1.png Graphic file (type png)
+
+<use imagenes/2F1.png>
+Package pdftex.def Info: imagenes/2F1.png used on input line 632.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ <imagenes/2G1.png, id=114, 210.18526pt x 158.39175pt>
+File: imagenes/2G1.png Graphic file (type png)
+
+<use imagenes/2G1.png>
+Package pdftex.def Info: imagenes/2G1.png used on input line 637.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ [21 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2D1.png> <C:/U
+sers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2E1.png>] <imagenes/2H1.
+png, id=120, 210.18526pt x 158.39175pt>
+File: imagenes/2H1.png Graphic file (type png)
+
+<use imagenes/2H1.png>
+Package pdftex.def Info: imagenes/2H1.png used on input line 642.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ <imagenes/2I1.png, id=121, 210.18526pt x 158.39175pt>
+File: imagenes/2I1.png Graphic file (type png)
+
+<use imagenes/2I1.png>
+Package pdftex.def Info: imagenes/2I1.png used on input line 647.
+(pdftex.def)             Requested size: 306.81741pt x 231.24277pt.
+ [22 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2F1.png> <C:/U
+sers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2G1.png>] [23 <C:/Users/
+Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2H1.png> <C:/Users/Álvaro/Do
+cuments/GitHub/T3Redes/Informe/imagenes/2I1.png>]
+<imagenes/2A2.png, id=132, 220.4235pt x 158.39175pt>
+File: imagenes/2A2.png Graphic file (type png)
+ <use imagenes/2A2.png>
+Package pdftex.def Info: imagenes/2A2.png used on input line 657.
+(pdftex.def)             Requested size: 306.81741pt x 220.48775pt.
+
+<imagenes/2B2.png, id=133, 220.4235pt x 158.39175pt>
+File: imagenes/2B2.png Graphic file (type png)
+ <use imagenes/2B2.png>
+Package pdftex.def Info: imagenes/2B2.png used on input line 662.
+(pdftex.def)             Requested size: 306.81741pt x 220.48775pt.
+
+<imagenes/2C2.png, id=134, 222.23026pt x 158.994pt>
+File: imagenes/2C2.png Graphic file (type png)
+ <use imagenes/2C2.png>
+Package pdftex.def Info: imagenes/2C2.png used on input line 667.
+(pdftex.def)             Requested size: 306.81741pt x 219.52112pt.
+
+<imagenes/2D2.png, id=135, 221.02576pt x 158.994pt>
+File: imagenes/2D2.png Graphic file (type png)
+ <use imagenes/2D2.png>
+Package pdftex.def Info: imagenes/2D2.png used on input line 672.
+(pdftex.def)             Requested size: 306.81741pt x 220.73172pt.
+
+[24 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2A2.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2B2.png>]
+<imagenes/2E2.png, id=141, 221.02576pt x 158.39175pt>
+File: imagenes/2E2.png Graphic file (type png)
+ <use imagenes/2E2.png>
+Package pdftex.def Info: imagenes/2E2.png used on input line 677.
+(pdftex.def)             Requested size: 306.81741pt x 219.89561pt.
+
+<imagenes/2F2.png, id=142, 221.628pt x 159.59625pt>
+File: imagenes/2F2.png Graphic file (type png)
+ <use imagenes/2F2.png>
+Package pdftex.def Info: imagenes/2F2.png used on input line 682.
+(pdftex.def)             Requested size: 306.81741pt x 220.94194pt.
+
+[25 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2C2.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2D2.png>]
+<imagenes/2G2.png, id=149, 220.4235pt x 158.994pt>
+File: imagenes/2G2.png Graphic file (type png)
+ <use imagenes/2G2.png>
+Package pdftex.def Info: imagenes/2G2.png used on input line 687.
+(pdftex.def)             Requested size: 306.81741pt x 221.3261pt.
+
+<imagenes/2H2.png, id=150, 221.02576pt x 158.39175pt>
+File: imagenes/2H2.png Graphic file (type png)
+ <use imagenes/2H2.png>
+Package pdftex.def Info: imagenes/2H2.png used on input line 692.
+(pdftex.def)             Requested size: 306.81741pt x 219.89561pt.
+
+[26 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2E2.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2F2.png>]
+<imagenes/2I2.png, id=156, 221.02576pt x 158.994pt>
+File: imagenes/2I2.png Graphic file (type png)
+ <use imagenes/2I2.png>
+Package pdftex.def Info: imagenes/2I2.png used on input line 697.
+(pdftex.def)             Requested size: 306.81741pt x 220.73172pt.
+
+[27 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2G2.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2H2.png>]
+<imagenes/2A3.png, id=162, 210.7875pt x 158.994pt>
+File: imagenes/2A3.png Graphic file (type png)
+ <use imagenes/2A3.png>
+Package pdftex.def Info: imagenes/2A3.png used on input line 705.
+(pdftex.def)             Requested size: 306.81741pt x 231.43303pt.
+
+<imagenes/2B3.png, id=163, 210.7875pt x 158.994pt>
+File: imagenes/2B3.png Graphic file (type png)
+ <use imagenes/2B3.png>
+Package pdftex.def Info: imagenes/2B3.png used on input line 710.
+(pdftex.def)             Requested size: 306.81741pt x 231.43303pt.
+
+<imagenes/2C3.png, id=164, 211.992pt x 159.59625pt>
+File: imagenes/2C3.png Graphic file (type png)
+ <use imagenes/2C3.png>
+Package pdftex.def Info: imagenes/2C3.png used on input line 715.
+(pdftex.def)             Requested size: 306.81741pt x 231.00923pt.
+
+[28 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2I2.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2A3.png>]
+<imagenes/2D3.png, id=170, 210.18526pt x 159.59625pt>
+File: imagenes/2D3.png Graphic file (type png)
+ <use imagenes/2D3.png>
+Package pdftex.def Info: imagenes/2D3.png used on input line 720.
+(pdftex.def)             Requested size: 306.81741pt x 233.00125pt.
+
+<imagenes/2E3.png, id=171, 211.992pt x 158.994pt>
+File: imagenes/2E3.png Graphic file (type png)
+ <use imagenes/2E3.png>
+Package pdftex.def Info: imagenes/2E3.png used on input line 725.
+(pdftex.def)             Requested size: 306.81741pt x 230.13751pt.
+
+[29 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2B3.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2C3.png>]
+<imagenes/2F3.png, id=177, 211.38976pt x 158.994pt>
+File: imagenes/2F3.png Graphic file (type png)
+ <use imagenes/2F3.png>
+Package pdftex.def Info: imagenes/2F3.png used on input line 730.
+(pdftex.def)             Requested size: 306.81741pt x 230.78284pt.
+
+<imagenes/2G3.png, id=178, 210.7875pt x 158.994pt>
+File: imagenes/2G3.png Graphic file (type png)
+ <use imagenes/2G3.png>
+Package pdftex.def Info: imagenes/2G3.png used on input line 735.
+(pdftex.def)             Requested size: 306.81741pt x 231.43303pt.
+
+[30 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2D3.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2E3.png>]
+<imagenes/2H3.png, id=184, 211.38976pt x 158.39175pt>
+File: imagenes/2H3.png Graphic file (type png)
+ <use imagenes/2H3.png>
+Package pdftex.def Info: imagenes/2H3.png used on input line 740.
+(pdftex.def)             Requested size: 306.81741pt x 229.90866pt.
+
+<imagenes/2I3.png, id=185, 211.38976pt x 158.994pt>
+File: imagenes/2I3.png Graphic file (type png)
+ <use imagenes/2I3.png>
+Package pdftex.def Info: imagenes/2I3.png used on input line 745.
+(pdftex.def)             Requested size: 306.81741pt x 230.78284pt.
+
+[31 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2F3.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2G3.png>] [32 <C:/Users/�
+�lvaro/Documents/GitHub/T3Redes/Informe/imagenes/2H3.png> <C:/Users/Álvaro/Doc
+uments/GitHub/T3Redes/Informe/imagenes/2I3.png>]
+<imagenes/2A4.png, id=197, 205.9695pt x 158.39175pt>
+File: imagenes/2A4.png Graphic file (type png)
+ <use imagenes/2A4.png>
+Package pdftex.def Info: imagenes/2A4.png used on input line 755.
+(pdftex.def)             Requested size: 306.81741pt x 235.94356pt.
+
+<imagenes/2B4.png, id=198, 207.174pt x 158.994pt>
+File: imagenes/2B4.png Graphic file (type png)
+ <use imagenes/2B4.png>
+Package pdftex.def Info: imagenes/2B4.png used on input line 760.
+(pdftex.def)             Requested size: 306.81741pt x 235.4821pt.
+
+<imagenes/2C4.png, id=199, 206.57175pt x 158.994pt>
+File: imagenes/2C4.png Graphic file (type png)
+ <use imagenes/2C4.png>
+Package pdftex.def Info: imagenes/2C4.png used on input line 765.
+(pdftex.def)             Requested size: 306.81741pt x 236.15897pt.
+
+<imagenes/2D4.png, id=200, 205.9695pt x 158.994pt>
+File: imagenes/2D4.png Graphic file (type png)
+ <use imagenes/2D4.png>
+Package pdftex.def Info: imagenes/2D4.png used on input line 770.
+(pdftex.def)             Requested size: 306.81741pt x 236.84068pt.
+
+[33 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2A4.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2B4.png>]
+<imagenes/2E4.png, id=206, 207.174pt x 159.59625pt>
+File: imagenes/2E4.png Graphic file (type png)
+ <use imagenes/2E4.png>
+Package pdftex.def Info: imagenes/2E4.png used on input line 775.
+(pdftex.def)             Requested size: 306.81741pt x 236.37405pt.
+
+<imagenes/2F4.png, id=207, 206.57175pt x 159.59625pt>
+File: imagenes/2F4.png Graphic file (type png)
+ <use imagenes/2F4.png>
+Package pdftex.def Info: imagenes/2F4.png used on input line 780.
+(pdftex.def)             Requested size: 306.81741pt x 237.05348pt.
+
+[34 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2C4.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2D4.png>]
+<imagenes/2G4.png, id=213, 206.57175pt x 159.59625pt>
+File: imagenes/2G4.png Graphic file (type png)
+ <use imagenes/2G4.png>
+Package pdftex.def Info: imagenes/2G4.png used on input line 785.
+(pdftex.def)             Requested size: 306.81741pt x 237.05348pt.
+
+<imagenes/2H4.png, id=214, 205.9695pt x 158.39175pt>
+File: imagenes/2H4.png Graphic file (type png)
+ <use imagenes/2H4.png>
+Package pdftex.def Info: imagenes/2H4.png used on input line 790.
+(pdftex.def)             Requested size: 306.81741pt x 235.94356pt.
+
+[35 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2E4.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2F4.png>]
+<imagenes/2I4.png, id=220, 207.174pt x 158.994pt>
+File: imagenes/2I4.png Graphic file (type png)
+ <use imagenes/2I4.png>
+Package pdftex.def Info: imagenes/2I4.png used on input line 795.
+(pdftex.def)             Requested size: 306.81741pt x 235.4821pt.
+
+[36 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2G4.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2H4.png>]
+<imagenes/2final.png, id=226, 211.992pt x 159.59625pt>
+File: imagenes/2final.png Graphic file (type png)
+
+<use imagenes/2final.png>
+Package pdftex.def Info: imagenes/2final.png used on input line 803.
+(pdftex.def)             Requested size: 306.81741pt x 231.00923pt.
+ [37 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2I4.png> <C:/U
+sers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/2final.png>] <imagenes/3
+inicial.png, id=233, 209.583pt x 159.59625pt>
+File: imagenes/3inicial.png Graphic file (type png)
+
+<use imagenes/3inicial.png>
+Package pdftex.def Info: imagenes/3inicial.png used on input line 814.
+(pdftex.def)             Requested size: 306.81741pt x 233.6612pt.
+
+<imagenes/3inicialA.png, id=234, 494.44725pt x 157.7895pt>
+File: imagenes/3inicialA.png Graphic file (type png)
+
+<use imagenes/3inicialA.png>
+Package pdftex.def Info: imagenes/3inicialA.png used on input line 818.
+(pdftex.def)             Requested size: 472.03123pt x 150.63832pt.
+
+<imagenes/3inicialB.png, id=235, 494.44725pt x 158.39175pt>
+File: imagenes/3inicialB.png Graphic file (type png)
+
+<use imagenes/3inicialB.png>
+Package pdftex.def Info: imagenes/3inicialB.png used on input line 822.
+(pdftex.def)             Requested size: 472.03123pt x 151.21327pt.
+
+<imagenes/3inicialC.png, id=236, 495.0495pt x 159.59625pt>
+File: imagenes/3inicialC.png Graphic file (type png)
+
+<use imagenes/3inicialC.png>
+Package pdftex.def Info: imagenes/3inicialC.png used on input line 826.
+(pdftex.def)             Requested size: 472.03123pt x 152.18053pt.
+ [38 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicial.png> 
+<C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialA.png>]
+<imagenes/3inicialD.png, id=242, 493.24275pt x 158.994pt>
+File: imagenes/3inicialD.png Graphic file (type png)
+
+<use imagenes/3inicialD.png>
+Package pdftex.def Info: imagenes/3inicialD.png used on input line 830.
+(pdftex.def)             Requested size: 472.03123pt x 152.16185pt.
+
+<imagenes/3inicialE.png, id=243, 493.24275pt x 158.39175pt>
+File: imagenes/3inicialE.png Graphic file (type png)
+
+<use imagenes/3inicialE.png>
+Package pdftex.def Info: imagenes/3inicialE.png used on input line 834.
+(pdftex.def)             Requested size: 472.03123pt x 151.58546pt.
+
+<imagenes/3inicialF.png, id=244, 493.24275pt x 158.39175pt>
+File: imagenes/3inicialF.png Graphic file (type png)
+
+<use imagenes/3inicialF.png>
+Package pdftex.def Info: imagenes/3inicialF.png used on input line 838.
+(pdftex.def)             Requested size: 472.03123pt x 151.58546pt.
+ [39 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialB.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialC.png> <C:
+/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialD.png>]
+<imagenes/3inicialG.png, id=251, 495.65175pt x 158.994pt>
+File: imagenes/3inicialG.png Graphic file (type png)
+
+<use imagenes/3inicialG.png>
+Package pdftex.def Info: imagenes/3inicialG.png used on input line 842.
+(pdftex.def)             Requested size: 472.03123pt x 151.42432pt.
+
+<imagenes/3inicialH.png, id=252, 494.44725pt x 158.994pt>
+File: imagenes/3inicialH.png Graphic file (type png)
+
+<use imagenes/3inicialH.png>
+Package pdftex.def Info: imagenes/3inicialH.png used on input line 846.
+(pdftex.def)             Requested size: 472.03123pt x 151.78822pt.
+
+<imagenes/3inicialI.png, id=253, 492.6405pt x 160.80075pt>
+File: imagenes/3inicialI.png Graphic file (type png)
+
+<use imagenes/3inicialI.png>
+Package pdftex.def Info: imagenes/3inicialI.png used on input line 850.
+(pdftex.def)             Requested size: 472.03123pt x 154.07742pt.
+ [40 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialE.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialF.png> <C:
+/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialG.png>] <image
+nes/3A1-2.png, id=260, 501.072pt x 158.994pt>
+File: imagenes/3A1-2.png Graphic file (type png)
+
+<use imagenes/3A1-2.png>
+Package pdftex.def Info: imagenes/3A1-2.png used on input line 858.
+(pdftex.def)             Requested size: 472.03123pt x 149.77946pt.
+ <imagenes/3B1-2.png, id=261, 502.2765pt x 158.994pt>
+File: imagenes/3B1-2.png Graphic file (type png)
+
+<use imagenes/3B1-2.png>
+Package pdftex.def Info: imagenes/3B1-2.png used on input line 863.
+(pdftex.def)             Requested size: 472.03123pt x 149.42526pt.
+ <imagenes/3C1-2.png, id=262, 502.2765pt x 158.994pt>
+File: imagenes/3C1-2.png Graphic file (type png)
+
+<use imagenes/3C1-2.png>
+Package pdftex.def Info: imagenes/3C1-2.png used on input line 868.
+(pdftex.def)             Requested size: 472.03123pt x 149.42526pt.
+ [41 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialH.png>
+ <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3inicialI.png> <C:
+/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3A1-2.png>] <imagenes/
+3D1-2.png, id=269, 503.481pt x 159.59625pt>
+File: imagenes/3D1-2.png Graphic file (type png)
+
+<use imagenes/3D1-2.png>
+Package pdftex.def Info: imagenes/3D1-2.png used on input line 873.
+(pdftex.def)             Requested size: 472.03123pt x 149.6284pt.
+ <imagenes/3E1-2.png, id=270, 502.2765pt x 158.994pt>
+File: imagenes/3E1-2.png Graphic file (type png)
+
+<use imagenes/3E1-2.png>
+Package pdftex.def Info: imagenes/3E1-2.png used on input line 878.
+(pdftex.def)             Requested size: 472.03123pt x 149.42526pt.
+ <imagenes/3F1-2.png, id=271, 503.481pt x 160.1985pt>
+File: imagenes/3F1-2.png Graphic file (type png)
+
+<use imagenes/3F1-2.png>
+Package pdftex.def Info: imagenes/3F1-2.png used on input line 883.
+(pdftex.def)             Requested size: 472.03123pt x 150.19305pt.
+ [42 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3B1-2.png> <C:
+/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3C1-2.png> <C:/Users/�
+�lvaro/Documents/GitHub/T3Redes/Informe/imagenes/3D1-2.png>] <imagenes/3G1-2.pn
+g, id=278, 502.2765pt x 158.994pt>
+File: imagenes/3G1-2.png Graphic file (type png)
+
+<use imagenes/3G1-2.png>
+Package pdftex.def Info: imagenes/3G1-2.png used on input line 888.
+(pdftex.def)             Requested size: 472.03123pt x 149.42526pt.
+ <imagenes/3H1-2.png, id=279, 501.67426pt x 158.994pt>
+File: imagenes/3H1-2.png Graphic file (type png)
+
+<use imagenes/3H1-2.png>
+Package pdftex.def Info: imagenes/3H1-2.png used on input line 893.
+(pdftex.def)             Requested size: 472.03123pt x 149.60236pt.
+ <imagenes/3I1-2.png, id=280, 502.2765pt x 158.994pt>
+File: imagenes/3I1-2.png Graphic file (type png)
+
+<use imagenes/3I1-2.png>
+Package pdftex.def Info: imagenes/3I1-2.png used on input line 898.
+(pdftex.def)             Requested size: 472.03123pt x 149.42526pt.
+ [43 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3E1-2.png> <C:
+/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3F1-2.png> <C:/Users/�
+�lvaro/Documents/GitHub/T3Redes/Informe/imagenes/3G1-2.png>] <imagenes/3A3.png,
+ id=288, 276.43275pt x 159.59625pt>
+File: imagenes/3A3.png Graphic file (type png)
+
+<use imagenes/3A3.png>
+Package pdftex.def Info: imagenes/3A3.png used on input line 906.
+(pdftex.def)             Requested size: 330.42041pt x 190.78151pt.
+ <imagenes/3B3.png, id=289, 276.43275pt x 159.59625pt>
+File: imagenes/3B3.png Graphic file (type png)
+
+<use imagenes/3B3.png>
+Package pdftex.def Info: imagenes/3B3.png used on input line 911.
+(pdftex.def)             Requested size: 330.42041pt x 190.78151pt.
+ <imagenes/3C3.png, id=290, 275.8305pt x 158.39175pt>
+File: imagenes/3C3.png Graphic file (type png)
+
+<use imagenes/3C3.png>
+Package pdftex.def Info: imagenes/3C3.png used on input line 916.
+(pdftex.def)             Requested size: 330.42041pt x 189.7501pt.
+ [44 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3H1-2.png> <C:
+/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3I1-2.png> <C:/Users/�
+�lvaro/Documents/GitHub/T3Redes/Informe/imagenes/3A3.png>] <imagenes/3D3.png, i
+d=297, 275.8305pt x 158.39175pt>
+File: imagenes/3D3.png Graphic file (type png)
+ <use imagenes/3D3.png>
+Package pdftex.def Info: imagenes/3D3.png used on input line 921.
+(pdftex.def)             Requested size: 330.42041pt x 189.7501pt.
+
+<imagenes/3E3.png, id=298, 276.43275pt x 158.39175pt>
+File: imagenes/3E3.png Graphic file (type png)
+ <use imagenes/3E3.png>
+Package pdftex.def Info: imagenes/3E3.png used on input line 926.
+(pdftex.def)             Requested size: 330.42041pt x 189.34166pt.
+
+[45 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3B3.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3C3.png>]
+<imagenes/3F3.png, id=304, 276.43275pt x 160.1985pt>
+File: imagenes/3F3.png Graphic file (type png)
+ <use imagenes/3F3.png>
+Package pdftex.def Info: imagenes/3F3.png used on input line 931.
+(pdftex.def)             Requested size: 330.42041pt x 191.50145pt.
+
+<imagenes/3G3.png, id=305, 275.8305pt x 158.994pt>
+File: imagenes/3G3.png Graphic file (type png)
+ <use imagenes/3G3.png>
+Package pdftex.def Info: imagenes/3G3.png used on input line 936.
+(pdftex.def)             Requested size: 330.42041pt x 190.4716pt.
+
+[46 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3D3.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3E3.png>]
+<imagenes/3H3.png, id=311, 276.43275pt x 159.59625pt>
+File: imagenes/3H3.png Graphic file (type png)
+ <use imagenes/3H3.png>
+Package pdftex.def Info: imagenes/3H3.png used on input line 941.
+(pdftex.def)             Requested size: 330.42041pt x 190.78151pt.
+
+<imagenes/3I3.png, id=312, 276.43275pt x 158.994pt>
+File: imagenes/3I3.png Graphic file (type png)
+ <use imagenes/3I3.png>
+Package pdftex.def Info: imagenes/3I3.png used on input line 946.
+(pdftex.def)             Requested size: 330.42041pt x 190.0616pt.
+
+[47 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3F3.png> <C:/Us
+ers/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3G3.png>] [48 <C:/Users/�
+�lvaro/Documents/GitHub/T3Redes/Informe/imagenes/3H3.png> <C:/Users/Álvaro/Doc
+uments/GitHub/T3Redes/Informe/imagenes/3I3.png>]
+<imagenes/3final.png, id=323, 210.7875pt x 159.59625pt>
+File: imagenes/3final.png Graphic file (type png)
+
+<use imagenes/3final.png>
+Package pdftex.def Info: imagenes/3final.png used on input line 956.
+(pdftex.def)             Requested size: 472.03123pt x 357.40302pt.
+ [49 <C:/Users/Álvaro/Documents/GitHub/T3Redes/Informe/imagenes/3final.png>]
+(C:\Users\Álvaro\Documents\GitHub\T3Redes\Informe\Informe.aux) ) 
 Here is how much of TeX's memory you used:
- 4744 strings out of 493921
- 62606 string characters out of 3152890
- 143731 words of memory out of 3000000
- 7956 multiletter control sequences out of 15000+200000
+ 5209 strings out of 493921
+ 71631 string characters out of 3152890
+ 144497 words of memory out of 3000000
+ 8344 multiletter control sequences out of 15000+200000
  68536 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,14n,32p,1202b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/MiKTe
-X 2.9/fonts/enc/dvips/iwona/ec-iwona.enc}<E:/MiKTeX 2.9/fonts/type1/nowacki/iwo
-na/iwonab.pfb><E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonabi.pfb><E:/MiKTeX 2
-.9/fonts/type1/nowacki/iwona/iwonar.pfb><E:/MiKTeX 2.9/fonts/type1/nowacki/iwon
-a/iwonari.pfb>
-Output written on Informe.pdf (12 pages, 216506 bytes).
+{E:/MiKTeX 2.9
+/fonts/enc/dvips/iwona/rm-iwona.enc}{E:/MiKTeX 2.9/fonts/enc/dvips/iwona/mi-iwo
+na.enc}{E:/MiKTeX 2.9/fonts/enc/dvips/iwona/sy-iwona.enc}{E:/MiKTeX 2.9/fonts/e
+nc/dvips/iwona/ec-iwona.enc}<E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb
+><E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonabi.pfb><E:/MiKTeX 2.9/fonts/type
+1/nowacki/iwona/iwonar.pfb><E:/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonari.pfb
+>
+Output written on Informe.pdf (49 pages, 904927 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 352 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
